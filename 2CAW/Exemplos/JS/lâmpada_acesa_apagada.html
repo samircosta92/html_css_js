@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lâmpada acesa e apagada</title>
+		<meta charset="utf-8">
+	</head>
+	<body id='idlugar'>
+		<img id='idimg' src="./img/acesa.jpg" onmouseover="this.src ='./img/acesa.jpg'" onmouseout="this.src ='./img/apagada.jpg'">
+		<script type="text/javascript">
+			var lugar=document.getElementById('idlugar');
+			var imagem=	document.getElementById('idimg');
+			
+			lugar.style.backgroundColor = "grey";
+			imagem.style.boxShadow = "10px 20px 30px black";
+			
+			
+		</script>
+	</body>
+</html>

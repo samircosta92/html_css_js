@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculadora</title>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+		<style>
+			body{
+				background-image:url(./img/calculadora.jpg);
+			}
+			form{
+				padding-top:20px;
+				padding-bottom:20px;
+				text-align:center;
+				font-size:20px;
+				color:red;
+				background:black;
+			}
+			
+			header,footer{
+				text-align:center;
+				color:white;
+				background-color:#000080;
+				padding:10px;
+			}
+			
+			footer{
+				position:fixed;
+				bottom:0;
+				width:100%;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			function soma(num1,num2) 
+			{
+				var resp;
+				resp= parseFloat(num1)+parseFloat(num2); 
+				return resp;
+			}
+			
+			function subt(num1,num2) 
+			{
+				var resp;
+				resp= parseFloat(num1)-parseFloat(num2); 
+				return resp;
+			}
+			
+			function mult(num1,num2) 
+			{
+				var resp;
+				resp= parseFloat(num1)*parseFloat(num2); 
+				return resp;
+			}
+			
+			function razao(num1,num2) 
+			{
+				var resp;
+				resp= parseFloat(num1)/parseFloat(num2); 
+				return resp.toFixed(2);
+			}
+			
+			function limpa_campo(n) 
+			{
+				if(n==1) 
+				{
+					document.form.num1.value=""; 
+				} 
+				else 
+				{
+					document.form.num2.value=""; 
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Calculadora com HTML,CSS & JS</h1>
+			<hr>
+		</header>
+		<form name="form">
+			<fieldset name="calculadora">
+				Primeiro Valor: <input type="text" size="20" id="num1" value="Digite o primeiro valor" onFocus="limpa_campo(1);"><br><br>
+				Segundo Valor: <input type="text" size="20" id="num2" value="Digite o segundo valor" onFocus="limpa_campo(2);"><br><br>
+				<input type="button" value="SOMAR" onClick="this.form.resp.value=soma(this.form.num1.value,this.form.num2.value);">
+				<input type="button" value="SUBTRAIR" onClick="this.form.resp.value=subt(this.form.num1.value,this.form.num2.value);">
+				<input type="button" value="MULTIPLICAR" onClick="this.form.resp.value=mult(this.form.num1.value,this.form.num2.value);">
+				<input type="button" value="DIVIDIR" onClick="this.form.resp.value=razao(this.form.num1.value,this.form.num2.value);"><br><br>
+				Resultado: <input type="text" id="resp" size="20" ><br><br>
+				<button type="reset" value="reset">APAGAR</button><br><br>
+			</fieldset>
+		</form>
+		<footer>Atividade 2CAW - Samir Costa - 26/10/2020</footer>
+	</body>
+</html>

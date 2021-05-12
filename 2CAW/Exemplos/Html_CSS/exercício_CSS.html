@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercício1</title>
+		<style>
+		h2,h3{
+			color:red;
+		}
+		.classeA{
+			background:aqua
+		}
+		.classeB{
+			background:lavender
+		}
+		</style>
+	</head>
+	<body>
+		<article>
+			<h2>Conhecendo o CSS</h2>
+			<p>Você conhece as formas de uso do CSS? Já ouviu falar de seletores?</p>
+			<section><h3>Formas de implementação do CSS:</h3>
+				<ul class="classeA">
+					<li>CSS inline: aplicado a cada tag dentro do código HTML. É necessário inserir na tag 'style: "parâmetro:valor"</li>
+					<li style="background:orange;">CSS interno: aplicado no "head" dentro da tag style. Permite a estilização de todas as ocorrências do seletor indicado na página HTML;</li>
+					<li>CSS externo: link para um arquivo externo que contém informações de estilos. Normalmente usado para layouts e Google Fonts.</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Seletores</h3>
+				<p>É possível através da escolha dos seletores definir onde os estilos criados serão aplicados:</p>
+				<ul class="classeB">
+					<li>Seletor tag: ao usar a tag HTML como seletor, definimos que o estilo criado será aplicada em todas as ocorrorências da tag na página;</li>
+					<li>Seletor classe: permite a criação de um conjunto de estilos que pode ser aplicada a tags específicas. Precisa do "." antes do nome no "style" e a chamada na tag usando "class=nome";</li>
+					<li>Seletor ID: semelhante à classe, porém usado para estruturas únicas da página. Usa-se "#" antes do nome em "style" e chama-se na tag com "id=nome".</li>
+				</ul>
+			</section>
+		</article>
+	</body>
+</html>
+
+<!-- a)Destaque os títulos e subtítulos presentes no conteúdo:
+	b)Aplique estilos diferentes às lista:
+	c)Faça algum estilo  que destaque a forma de implementaçãoso CSS que você acha mais interessante-->

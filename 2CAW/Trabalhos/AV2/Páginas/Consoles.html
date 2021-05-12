@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
+		<title>Portal do Vídeo Game</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+		<style>
+			p{
+				padding-top:15px
+			}
+			
+			footer,hr,h4{
+					clear:both;
+			}
+			
+			.imgA{
+				float:left;
+			}
+			
+			.imgB{
+				float:right;
+			}
+			
+			table,tr,th,td{
+				border:1px solid black;
+				text-align:center;
+			}
+			.classT{ 
+				margin-right:auto; 
+				margin-left:auto; 
+			}
+			
+			section{
+				padding-top:50px;
+			}
+			
+				
+		</style>
+	</head>
+	<body class="classA">
+		<header>
+			<canvas id = "ret" width = "2000" height = "60">O Canvas não está ativado em seu Browser</canvas>
+			<h1>Portal do Vídeo Game</h1>
+			<h3>O seu canal de entretenimento</h3>
+			<hr>
+			<nav>
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="consoles.html">Consoles</a></li>
+					<li><a href="jogos.html">Jogos</a></li>
+				</ul>
+			</nav>
+			<hr>
+		<script src="../Scripts/canvas.js"></script>
+		</header>
+		<img src="../img/logoplay.jpg" height="300" width="100%">
+		<section>
+			<h4>Playstation 5</h4>
+			<h5>Passe o mouse nas imagens para ver os acessórios</h5><br>
+			<figure class="imgA">
+				<img src="../img/ps5.jpg" onmouseover="this.src ='../img/accps5.jpg'" onmouseout="this.src ='../img/ps5.jpg'" height="400" width="600">
+			</figure>
+			<p> O que sabemos até agora é que o console terá gráficos em 4K a 120 fps, suporte a ray tracing e um SSD integrado muito mais rápido, para permitir que os jogos 
+			sejam lidos e iniciados muito mais rapidamente. Exatamente por isso que a Sony apresentou o PS5 em duas versões: a tradicional, com drive óptico e 
+			uma Digital Edition, que dispensa o leitor tal qual a Microsoft fez com o Xbox One S. A presença do leitor de discos sugere que este modelo é mais voltado a quem possui uma velocidade de internet mais limitada, 
+			ou que faz questão de ter os estojos e discos em sua estante. Já para quem abre mão de tudo isso, o PlayStation 5 Digital Edition é uma versão ligeiramente mais fina, mas ambos compartilham do mesmo hardware e design estiloso, em preto e branco.</p>
+			<p style="font-weight:bold">Preço sugerido no Brasil: R$ 4699,00</p>
+		</section>
+		<section>
+			<h4>Playstation 5 Digital Edition</h4>
+			<figure class="imgB">
+				<img src="../img/ps5DE.jpg" onmouseover="this.src ='../img/accps5.jpg'" onmouseout="this.src ='../img/ps5DE.jpg'" height="400" width="600">
+			</figure>
+			<p>Essa versão do console da Playstation é totalmente digital, isso quer dizer que ele não possui entrada para unidades de disco. Os jogos que você adquirir ficam salvos na nuvem,
+			dessa forma você não precisa se preocupar com um monte de cd’s. Como mencionado anteriormente, O playstation 5 Digital Edition possui o mesmo hardware do console padrão. 
+			Sendo apenas diferenciado pela não existência de leitor de discos. Desta forma, acaba tendo um preço inferior em relação ao modelo padrão. </p>
+			<p style="font-weight:bold">Preço sugerido no Brasil: R$ 4199,00</p>
+		</section>		
+		<hr>
+		<img src="../img/logoxbox.png" height="300" width="100%">
+		<section>
+			<h4>Xbox Series X</h4>
+			<figure class="imgA">
+				<img src="../img/xboxx.jpg" onmouseover="this.src ='../img/accxbox.jpg'" onmouseout="this.src ='../img/xboxx.jpg'" height="400" width="600">
+			</figure>
+			<p> A Microsoft definiu três pilares para o Xbox Series X, que focam em potência, velocidade e compatibilidade. No primeiro quesito, 
+			temos um hardware interno de respeito, começando pelo processador AMD de arquitetura Zen 2 customizado para o sistema. Ele é um octa-core com processo de litografia de 7 nanômetros,
+			que alcança um clock fixo simultâneo de 3,8 GHz em todos os núcleos. O processador recebe o suporte do chip gráfico também produzido pela AMD, uma GPU customizada 
+			com base na arquitetura RDNA 2 da AMD, com 56 unidades computacionais físicas, mas que por questões de design apresenta 4 delas desativadas por padrão; 
+			isso também derruba a quantidade de shaders, de 3.584 presentes para 3.328 funcionais. Ainda assim, o chip gráfico é capaz de executar 12,155 Tflop/s e apresenta um clock também fixo, de 1,825 GHz. 
+			Segundo a Microsoft, o chip integrado é capaz de oferecer gráficos em 4K a 60 frames por segundo reais, sem upscaling.</p>
+			<p style="font-weight:bold">Preço sugerido no Brasil: R$ 4599,00</p>
+		</section>
+		<section>
+			<h4>Xbox Series S</h4>
+			<figure class="imgB">
+				<img src="../img/xboxs.jpg" onmouseover="this.src ='../img/accxbox.jpg'" onmouseout="this.src ='../img/xboxs.jpg'" height="400" width="600">
+			</figure>
+			<p>O Xbox Series S é o novo console da Microsoft que foi revelado recentemente como uma versão menor e mais barata do Xbox Series X. 
+			O aparelho deve rodar os mesmos jogos do irmão mais potente, apesar de provavelmente reproduzir gráficos mais modestos em resoluções menores. Assim como o Playstation 5 Digital Edition, não possui leitor de disco.</p>
+			<p style="font-weight:bold">Preço sugerido no Brasil: R$ 2799,00</p>
+		</section>
+		<hr>
+		<table class="classT">
+		<caption>Especificações Técnicas</caption>
+			<tr>
+				<th>Especificação</th>
+				<th>Playstation 5</th>
+				<th>Playstation 5 Digital</th>
+				<th>Xbox Series X</th>
+				<th>Xbox Series S</th>
+			</tr>
+			<tr>
+				<td>CPU</td>
+				<td>8x Zen 2 Cores de 3.5Ghz</td>
+				<td>8x Zen 2 Cores de 3.5Ghz</td>
+				<td>8x Zen 2 Cores de 3.8 GHz</td>
+				<td>8x Zen 2 Cores de 3.6Ghz</td>
+			</tr>
+			<tr>
+				<td>GPU</td>
+				<td>10.28 TFLOPS</td>
+				<td>10.28 TFLOPS</td>
+				<td>12 TFLOPS</td>
+				<td>4 TFLOPS</td>
+			</tr>
+			<tr>
+				<td>RAM</td>
+				<td>16GB GDDR6</td>
+				<td>16GB GDDR6</td>
+				<td>16GB GDDR6</td>
+				<td>10GB GDDR6</td>
+			</tr>
+			<tr>
+				<td>Armazenamento</td>
+				<td>825GB SSD</td>
+				<td>825GB SSD</td>
+				<td>1TB SSD</td>
+				<td>512GB SSD</td>
+			</tr>
+			<tr>
+				<td>Leitor de disco?</td>
+				<td>Sim</td>
+				<td>Não</td>
+				<td>Sim</td>
+				<td>Não</td>
+			</tr>
+		</table>
+		<hr>
+		<footer>Projeto AV2 - Samir Costa - 30/11/2020</footer>
+	</body>
+</html>

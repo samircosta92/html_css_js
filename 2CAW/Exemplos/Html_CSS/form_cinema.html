@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>Formulário</title>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<style>
+			*{font-family: 'Josefin Sans', sans-serif;}
+			body{
+				background-color:black;
+				color:red;
+				}
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset name="pipoca">
+				<legend>Escolha sua pipoca:</legend></br>
+				<input type="radio" name="tipo" value="salgada"><label for="tipo">Salgada</label>
+				<input type="radio" name="tipo" value="doce"><label for="tipo">Doce</label>
+				<input type="radio" name="tipo" value="nao"><label for="tipo">Não,obrigado!</label><br><br>
+				<input type="radio" name="tamanho" value="pequena"><label for="tamanho">Pequena</label>
+				<input type="radio" name="tamanho" value="media"><label for="tamanho">Média</label>
+				<input type="radio" name="tamanho" value="grande"><label for="tamanho">Grande</label><br><br>
+			</fieldset>
+			<fieldset name="refrigerante">
+				<legend>Escolha seu refrigerante:</legend>
+				<input type="radio" name="tipo1" value="coca-cola"><label for="tipo1">Coca-Cola</label>
+				<input type="radio" name="tipo1" value="guarana"><label for="tipo1">Guaraná</label>
+				<input type="radio" name="tipo1" value="sprite"><label for="tipo1">Sprite</label>
+				<input type="radio" name="tipo1" value="laranja"><label for="tipo1">Fanta Laranja</label>
+				<input type="radio" name="tipo1" value="uva"><label for="uva">Fanta Uva</label>
+				<input type="radio" name="tipo1" value="nao"><label for="tipo1">Não, obrigado!</label><br><br>
+				<input type="radio" name="tamanho1" value="300"><label for="tamanho1">300ml</label>
+				<input type="radio" name="tamanho1" value="500"><label for="tamanho1">500ml</label>
+				<input type="radio" name="tamanho1" value="700"><label for="tamanho1">700ml</label><br><br>
+			</fieldset>
+			<fieldset name="doce">
+				<legend>Escolha seu doce:</legend>
+				<input type="radio" name="tipo2" value="fini"><label for="tipo2">Fini</label>
+				<input type="radio" name="tipo2" value="bis"><label for="tipo2">Bis</label>
+				<input type="radio" name="tipo2" value="twix"><label for="tipo2">Twix</label>
+				<input type="radio" name="tipo2" value="chocolate"><label for="tipo2">Barra de Chocolate</label>
+				<input type="radio" name="tipo2" value="m&m"><label for="uva">M&M </label>
+				<input type="radio" name="tipo2" value="nao"><label for="tipo2">Não, obrigado!</label><br><br><br>
+				
+				<p>Obrigado pela sua presença! Volte sempre!</p>
+			</fieldset>
+			<button type="reset" value="reset">APAGAR</button>
+			<button type="submit" value="submit">ENVIAR</button>
+		</form>
+	</body>
+</html>

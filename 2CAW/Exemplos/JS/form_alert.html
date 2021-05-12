@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+		<p id="lugar"></p>
+		<script type="text/javascript">
+		{
+			var nome,idade,gastoD,tempoE,tempoL,razao;
+			nome=window.prompt("Qual seu nome?");
+			idade=window.parseInt(prompt("Qual sua idade?"));
+			gastoD=window.parseFloat(prompt("Qual seu gasto diário com locomoção em R$?"));
+			tempoE=window.parseInt(prompt("Qual seu tempo semanal de estudos extraclasse em horas?"));
+			tempoL=window.parseInt(prompt("Qual seu tempo semanal livre em horas?"));
+			razao=tempoL*100/(tempoL+tempoE);
+			
+			var doc;
+		
+			doc=document.getElementById("lugar");
+			doc.style.color="red";
+			doc.style.backgroundColor="black";
+			doc.innerHTML="<p>Nome: "+nome+"</p>";
+			doc.innerHTML+="<p>Idade: "+idade+"anos</p>";
+			doc.innerHTML+="<p>Gasto Diário: R$"+gastoD+"</p>";
+			doc.innerHTML+="<p>Tempo de Estudo: "+tempoE+"h</p>";
+			doc.innerHTML+="<p>Tempo Livre: "+tempoL+"h</p>";
+			doc.innerHTML+="<p>Razão(%): "+razao.toFixed(2)+"</p>";
+			
+		}
+		</script>
+	</body>
+</html>

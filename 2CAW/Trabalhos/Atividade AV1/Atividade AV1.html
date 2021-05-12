@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<title>Atividade AV1 - Samir Costa - 1920478300028</title>
+		<style>
+			.classB{
+				font-family: 'Josefin Sans', sans-serif;
+				border:solid 15px grey;
+				border-style:ridge;
+			}
+			h1,h4,footer{
+				text-align:center;
+			}
+			footer,header{
+				background:lightblue;
+			}
+			nav{
+				background:lightgrey;
+				padding-top:5px;
+				padding-bottom:5px;
+			}
+			li{	
+				display:inline;
+				padding:80px;
+			}
+			.img{
+				width:550px;
+				height:450px;
+			}
+			.fig{
+				text-align:center;
+			}
+			table,tr,th,td{
+				border:1px solid black;
+			}
+			.classT{ 
+				margin-right:auto; 
+				margin-left:auto; 
+			}
+			a:hover{color:red;}
+			
+		</style>
+	</head>
+	<body class="classB">
+	<header>
+		<h1>Bem Vindo ao Portal do Artesanato</h1>
+		<h4>Clique na opção desejada:</h4>
+		<hr>
+		<nav>
+			<ul>
+				<li><a href="">Artistas</a></li>
+				<li><a href="">Endereço</a></li>
+				<li><a href="">Comprar Online</a></li>
+				<li><a href="">Fale Conosco</a></li>
+				<li><a href="">Quem Somos</a></li>
+			</ul>
+		</nav>
+		<hr>
+	</header>
+	<section>	
+		<h2>Artista:</h2>
+		<h3>Samir Costa</h3>
+		<br>
+		<h2>Lista de obras:</h2>
+		<figure class="fig">
+			<img class="img" src="./img/item1.jpg" alt="bolsa de palha">
+			<figcaption>1 - Bolsa de Palha</figcaption>
+		</figure>
+		<figure class="fig">
+			<img class="img" src="./img/item2.jpg" alt="chapéu de palha">
+			<figcaption>2 - Chapéu de Palha</figcaption>
+		</figure>
+		<figure class="fig">
+			<img class="img" src="./img/item3.jpg" alt="carteira de palha">
+			<figcaption>3 - Carteira de Palha</figcaption>
+		</figure>
+		<figure class="fig">
+			<img class="img" src="./img/item4.jpg" alt="cinto de palha">
+			<figcaption>4 - Cinto de Palha</figcaption>
+		</figure>
+		<figure class="fig">
+			<img class="img" src="./img/item5.jpg" alt="colar de coco">
+			<figcaption>5 - Colar de Coco</figcaption>
+		</figure>
+		<figure class="fig">
+			<img class="img" src="./img/item6.jpg" alt="Brincos">
+			<figcaption>6 - Brincos Diversos</figcaption>
+		</figure>
+		<hr>
+	</section>
+	<table class="classT">
+		<caption>TABELA DE PREÇOS DO ARTISTA:</caption>
+		<tr>
+			<th>Produto</th>
+			<th>1 unidade</th>
+			<th>5 unidades</th>
+			<th>10 unidades</th>
+		</tr>
+		<tr>
+			<td>Bolsa de Palha</td>
+			<td>R$39,00</td>
+			<td>R$179,00</td>
+			<td>R$329,00</td>
+		</tr>
+			<td>Chapéu de Palha</td>
+			<td>R$29,00</td>
+			<td>R$119,00</td>
+			<td>R$199,00</td>
+		</tr>
+		<tr>
+			<td>Carteira de Palha</td>
+			<td>R$29,00</td>
+			<td>R$109,00</td>
+			<td>R$179,00</td>
+		</tr>
+		<tr>
+			<td>Cinto de Palha</td>
+			<td>R$19,00</td>
+			<td>R$79,00</td>
+			<td>R$149,00</td>
+		</tr>
+		<tr>
+			<td>Colar de Coco</td>
+			<td>R$15,00</td>
+			<td>R$69,00</td>
+			<td>R$129,00</td>
+		</tr>
+		<tr>
+			<td>Brincos Diversos</td>
+			<td>R$7,00</td>
+			<td>R$29,00</td>
+			<td>R$49,00</td>
+		</tr>
+	</table>
+	<form>
+		<fieldset name="contato">
+			<legend>Informações do Cliente:</legend>
+			<label for="nome">Nome Completo: <label>
+			<input type="text" name="nome" size="40"><br><br>
+			<label for="endereço">Endereço: <label>
+			<input type="text" name="endereço" size="40"><br><br>
+			<label for="referencia">Ponto de Referência: <label>
+			<input type="text" name="referencia" size="40"><br><br>
+			<label for="telefone">Telefone: <label>
+			<input type="text" name="telefone" size="10"><br>
+		</fieldset>
+		<fieldset name="produtos">
+			<legend>Escolha seus produtos:</legend>
+			<input type="checkbox" name="bolsa" value="bolsa"><label for="produto">Bolsa de Palha</label>
+			<select name="quantidade">
+				<option value="um">1 unidade</option>
+				<option value="cinco">5 unidades</option>
+				<option value="dez">10 unidades</option>
+			</select><br>
+			<input type="checkbox" name="chapéu" value="chapéu"><label for="produto">Chapéu de Palha</label>
+			<select name="quantidade">
+				<option value="um">1 unidade</option>
+				<option value="cinco">5 unidades</option>
+				<option value="dez">10 unidades</option>
+			</select><br>
+			<input type="checkbox" name="carteira" value="carteira"><label for="produto">Carteira de Palha</label>
+			<select name="quantidade">
+				<option value="um">1 unidade</option>
+				<option value="cinco">5 unidades</option>
+				<option value="dez">10 unidades</option>
+			</select><br>
+			<input type="checkbox" name="cinto" value="cinto"><label for="produto">Cinto de Palha</label>
+			<select name="quantidade">
+				<option value="um">1 unidade</option>
+				<option value="cinco">5 unidades</option>
+				<option value="dez">10 unidades</option>
+			</select><br>
+			<input type="checkbox" name="colar" value="colar"><label for="produto">Colar de Coco</label>
+			<select name="quantidade">
+				<option value="um">1 unidade</option>
+				<option value="cinco">5 unidades</option>
+				<option value="dez">10 unidades</option>
+			</select><br>
+			<input type="checkbox" name="brinco" value="brinco"><label for="produto">Brincos Diversos</label>
+			<select name="quantidade">
+				<option value="um">1 unidade</option>
+				<option value="cinco">5 unidades</option>
+				<option value="dez">10 unidades</option>
+			</select><br>
+		</fieldset>
+		<fieldset name="pagamento">
+			<legend>Escolha a forma de pagamento:</legend>	
+			<input type="radio" name="pagamento" value="boleto"><label for="pagamento">Boleto</label>
+			<input type="radio" name="pagamento" value="cartaoavista"><label for="pagamento">Cartão a vista</label>
+			<input type="radio" name="pagamento" value="cartaoparcelado"><label for="pagamento">Cartão parcelado</label>
+		</fieldset>
+		<button type="reset" value="reset">APAGAR</button>
+		<button type="submit" value="submit">ENVIAR</button>
+	</form>
+	<hr>
+	<footer>Atividade AV1 - Samir Costa - 22/09/2020</footer>
+	</body>
+</html>
+
+
+
+
+

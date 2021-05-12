@@ -1,0 +1,51 @@
+<!doctype html>
+<html>	
+	<head>
+	<meta charset="UTF-8">
+		<script type="text/javascript">
+			function limpaCampo(campo) 
+			{
+				if(campo==1)
+				{
+					document.form.num1.value = ""; 
+				} else if(campo==2)
+				{
+					document.form.num2.value = ""; 
+				} else if(campo==3) 
+				{
+					document.form.num3.value = "";  
+				}
+			}
+			
+			function maiorvalor(num1,num2,num3)
+			{
+				var maior=parseInt(num1);
+				if(parseInt(num2)>=maior)
+				{
+					maior=parseInt(num2);
+				}
+				if(parseInt(num3)>=maior)
+				{
+					maior=parseInt(num3);
+				}
+				
+				alert("O maior valor é "+maior);
+				
+				document.getElementById("resp").style.color="black";
+				document.getElementById("resp").style.backgroundColor="red";
+				document.getElementById("resp").innerHTML="O maior numero é "+maior;
+				
+			}
+			
+		</script>
+	</head>
+	<body>
+		<form name="form">
+			Primeiro Valor:<input type="text" size="40" id="num1" value="Digite o primeiro valor" onFocus="limpaCampo(1);"><br>
+			Segundo Valor:<input type="text" size="40" id="num2" value="Digite o segundo valor" onFocus="limpaCampo(2);"><br>
+			Terceiro Valor:<input type="text" size="40" id="num3" value="Digite o terceiro valor" onFocus="limpaCampo(3);"><br>
+			<input type="button" value="Apresentar maior valor" onClick="maiorvalor(this.form.num1.value,this.form.num2.value,this.form.num3.value);" onClick=document.body.style.backgroundColor="red">
+		</form>
+		<p id="resp"></p>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calcular Média</title>
+		<script type="text/javascript">
+		/* Esta função calcula a média ponderada entre duas provas */
+			function calculaMedia(nota1, nota2, peso1, peso2) {
+				var media=0;
+				media = (parseFloat(nota1*peso1) + parseFloat(nota2*peso2)) / (parseFloat(peso1) + parseFloat(peso2)); // conta da média
+				// usamos a função parseFloat() para o programa entender que estamos trabalhando com numeros
+				
+				i(media>=6)
+				{
+					document.form.mf.style.backgroundColor="green";
+				}
+				
+				else if(media<4)
+				{
+					document.form.mf.style.backgroundColor="red";
+				}
+				else
+				{
+					document.form.mf.style.backgroundColor="yellow";
+					
+				}
+				return media.toFixed(2);
+			}
+			/* Esta função limpa o campo de texto quando o usuário clica nele (onFocus) */
+			function limpaCampo(campo) {
+				if(campo == 1) {
+					document.form.nota1.value = ""; // pega o elemento nota 1 pelo formulário
+				} else if(campo == 2) {
+					document.getElementById("nota2").value = ""; // podemos pegar o elemento pelo ID dele também
+				} else if(campo == 3) {
+					document.getElementById("peso1").value = ""; 
+				} else {
+					document.getElementById("peso2").value = "";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h2>CALCULA MÉDIA</h2>
+		<form name="form">
+			Nota 1: <input type="text" size="20" id="nota1" value="Digite nota 1" onFocus="limpaCampo(1);"><br>
+			Nota 2: <input type="text" size="20" id="nota2" value="Digite nota 2" onFocus="limpaCampo(2);"> <br>
+			Peso Nota 1: <input type="text" size="20" id="peso1" value="Digite peso prova 1" onFocus="limpaCampo(3);"> <br>
+			Peso Nota 2: <input type="text" size="20" id="peso2" value="Digite peso prova 2" onFocus="limpaCampo(4);"> <br>
+			Media Final : <input type="text" id="mf" size="20" ><br> 
+			<input type="button" value="Calcular" onClick="this.form.mf.value=calculaMedia(this.form.nota1.value,this.form.nota2.value,this.form.peso1.value,this.form.peso2.value);">
+			
+		
+		</form>
+	</body>
+</html>
